@@ -1,0 +1,254 @@
+{
+  "name": "Appian Selenium Page Object Model - Complete Extraction",
+  "description": "Comprehensive extraction of the Appian Selenium framework Page Object Model structure",
+  "version": "7.10+",
+  "extraction_date": "2025-08-22",
+  "source": "appian-selenium-api framework",
+
+  "page_objects": {
+    "main_pages": [
+      {
+        "name": "TempoLogin",
+        "description": "Login page object for Appian Tempo authentication",
+        "class": "com.appiancorp.ps.automatedtest.tempo.TempoLogin",
+        "methods": [
+          "login(url, username, password, withTerms)",
+          "logout()",
+          "waitFor()",
+          "waitForLogin()",
+          "waitForTerms()",
+          "loginWithTerms(url, username, password)",
+          "navigateToLoginPage(url)"
+        ],
+        "locators": {
+          "login_form": "//form[@id = 'loginForm']/descendant::input[contains(@class, 'btn')]",
+          "login_submit_button": "//form[@id = 'loginForm']/descendant::input[contains(@class, 'btn')]",
+          "login_agree_button": "//form[@id = 'notification']/descendant::input[contains(@class, 'btn')]",
+          "logout_link": "//a[contains(text(),'Sign Out')]",
+          "login_box": "//div[@class = 'login-box']",
+          "username_field": "//input[@id='un' or @name='un' or @value='un' or text()='un']",
+          "password_field": "//input[@id='pw' or @name='pw' or @value='pw' or text()='pw']",
+          "custom_login_button": "//*[@id='%1$s' or @name='%1$s' or @value='%1$s' or text()='%1$s']"
+        }
+      },
+      {
+        "name": "TempoMenu",
+        "description": "Menu navigation page object",
+        "class": "com.appiancorp.ps.automatedtest.tempo.TempoMenu",
+        "interfaces": ["WaitFor", "Clickable"],
+        "methods": [
+          "click(menuName)",
+          "waitFor(menuName)"
+        ],
+        "locators": {
+          "menu_link": "//a[starts-with(@class, 'appian-menu-item') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]"
+        }
+      },
+      {
+        "name": "TempoSearch",
+        "description": "Search functionality page object",
+        "class": "com.appiancorp.ps.automatedtest.tempo.TempoSearch",
+        "methods": ["search(query)", "waitForSearchResults()"],
+        "locators": {
+          "search_field": "//div[contains(@class, 'appian-tempo-search')]/descendant::input"
+        }
+      }
+    ],
+
+    "field_components": [
+      {
+        "name": "TempoTextField",
+        "description": "Text input field component",
+        "class": "com.appiancorp.ps.automatedtest.tempo.interfaces.TempoTextField",
+        "interfaces": ["Populateable", "Verifiable", "Clearable"],
+        "methods": [
+          "populate(fieldLayout, value)",
+          "capture(fieldLayout)",
+          "clear(fieldLayout)",
+          "contains(fieldLayout, value)",
+          "isNotBlank(fieldLayout)"
+        ],
+        "locators": {
+          "field_label": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::input",
+          "field_index": "(//input[contains(@class, 'aui-TextInput')])[%1$d]",
+          "input_field": ".//input[contains(@class, 'aui-TextInput')]",
+          "field_layout": "/ancestor::div[contains(@class, 'aui_FieldLayout_InputContainer')][position()=1]"
+        }
+      },
+      {
+        "name": "TempoDropdownField",
+        "description": "Dropdown selection field component",
+        "class": "com.appiancorp.ps.automatedtest.tempo.interfaces.TempoDropdownField",
+        "methods": ["selectOption(fieldLayout, option)", "getSelectedValue(fieldLayout)"],
+        "locators": {
+          "field_label": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::div/select",
+          "input_field": ".//select",
+          "field_layout": "/ancestor::div[contains(@class, 'aui_FieldLayout_InputContainer')][position()=1]"
+        }
+      },
+      {
+        "name": "TempoButton",
+        "description": "Button component",
+        "class": "com.appiancorp.ps.automatedtest.tempo.interfaces.TempoButton",
+        "interfaces": ["Clickable", "WaitFor"],
+        "methods": ["click(buttonName)", "waitFor(buttonName)"],
+        "locators": {
+          "button": "//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s) and not(contains(@class, 'button-disabled'))]",
+          "accept_button": "//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s) and not(contains(@class, 'button-disabled'))]"
+        }
+      },
+      {
+        "name": "TempoGrid",
+        "description": "Data grid component with rows and columns",
+        "class": "com.appiancorp.ps.automatedtest.tempo.interfaces.TempoGrid",
+        "methods": [
+          "getCell(row, column)",
+          "getRowCount()",
+          "addRow()",
+          "selectAll()",
+          "navigateToPage(direction)"
+        ],
+        "locators": {
+          "grid_by_label": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::div/following-sibling::div/descendant::table/ancestor::div[contains(@class, 'aui_FieldLayout_InputContainer')][position()=1]",
+          "grid_by_index": "((//div[contains(@class, 'DataGrid-Table')]/descendant::table)[%1$d])/ancestor::div[contains(@class, 'aui_FieldLayout_InputContainer')][position()=1]",
+          "grid_cell": ".//tbody/tr[%1$d]/*[(self::td or self::th)][%2$d]",
+          "grid_add_row": ".//tfoot//a",
+          "grid_checkbox": ".//input[@type='checkbox']",
+          "grid_pagination": {
+            "first": ".//img[contains(@aria-label, 'First page')]",
+            "previous": ".//img[contains(@aria-label, 'Previous page')]",
+            "next": ".//img[contains(@aria-label, 'Next page')]",
+            "last": ".//img[contains(@aria-label, 'Last page')]"
+          }
+        }
+      },
+      {
+        "name": "TempoCheckboxField",
+        "description": "Checkbox field component",
+        "class": "com.appiancorp.ps.automatedtest.tempo.interfaces.TempoCheckboxField",
+        "locators": {
+          "field_label": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::input[type='checkbox']",
+          "field_index": "(//input[@type='checkbox'])[%1$d]",
+          "input_field": ".//input[contains(@type, 'checkbox')]",
+          "choice_by_label": ".//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]/preceding-sibling::input",
+          "choice_by_index": "(.//input[@type='checkbox'])[%1$d]"
+        }
+      },
+      {
+        "name": "TempoFileUploadField",
+        "description": "File upload field component",
+        "class": "com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFileUploadField",
+        "locators": {
+          "field_label": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::input",
+          "field_index": "(//input[contains(@class, 'gwt-FileUpload')])[%1$d]",
+          "input_field": ".//input[contains(@class, 'gwt-FileUpload')]",
+          "file_name": ".//span[contains(@class, 'filename')]",
+          "remove_link": ".//a[starts-with(text(), 'Remove')]",
+          "waiting_indicator": ".//div[contains(@class, 'prgbar-msg')]"
+        }
+      },
+      {
+        "name": "TempoPickerField",
+        "description": "Picker field with suggestions/autocomplete",
+        "class": "com.appiancorp.ps.automatedtest.tempo.interfaces.TempoPickerField",
+        "locators": {
+          "field_label": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span",
+          "input_field": ".//input[contains(@class, 'gwt-SuggestBox')]",
+          "suggestion": "//div[contains(@class, 'SuggestBoxPopup')]/descendant::p[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+          "selection": ".//a[@title]",
+          "remove_selection": ".//a/following-sibling::a"
+        }
+      }
+    ],
+
+    "common_selectors": {
+      "field_layout": {
+        "label": "//*[(self::label or self::span) and starts-with(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::*/following-sibling::div/descendant::div[contains(@class, 'aui_FieldLayout_InputContainer')]",
+        "index": "(//div[contains(@class, 'aui_FieldLayout_InputContainer')])[%1$d]",
+        "ancestor": "/ancestor::div[contains(@class, 'aui_FieldLayout_InputContainer')][position()=1]"
+      },
+      "form_elements": {
+        "title": "//h2",
+        "instructions": "//h2/following-sibling::p",
+        "submit_button": "//input[contains(@class, 'btn')]",
+        "working_indicator": "//div[@class = 'appian-indicator-message']",
+        "error_message": "//h1[contains(text(), 'Application Error')] | //div[contains(@class, 'gwt-PopupPanel') and contains(@class, 'error')]"
+      },
+      "navigation": {
+        "site_page_link": "//li[contains(translate(@title,'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]/descendant::a",
+        "logout_link": "//a[contains(text(),'Sign Out')]",
+        "user_profile": "//div[@class='user-profile']",
+        "menu_item": "//a[starts-with(@class, 'appian-menu-item')]"
+      }
+    },
+
+    "action_patterns": {
+      "common_actions": [
+        {
+          "name": "populate_field",
+          "pattern": "fieldFactory.populate(fieldName, fieldValue)",
+          "description": "Populate any field type using the factory pattern"
+        },
+        {
+          "name": "click_button",
+          "pattern": "button.click(buttonName)",
+          "description": "Click any button by name"
+        },
+        {
+          "name": "verify_field_value",
+          "pattern": "fieldFactory.contains(fieldName, expectedValue)",
+          "description": "Verify field contains expected value"
+        },
+        {
+          "name": "wait_for_element",
+          "pattern": "element.waitFor(elementName)",
+          "description": "Wait for element to be present"
+        },
+        {
+          "name": "clear_field",
+          "pattern": "fieldFactory.clear(fieldName)",
+          "description": "Clear field value"
+        },
+        {
+          "name": "capture_field_value",
+          "pattern": "fieldFactory.capture(fieldName)",
+          "description": "Capture current field value"
+        }
+      ]
+    },
+
+    "architecture_patterns": {
+      "factory_pattern": {
+        "description": "TempoFieldFactory dynamically determines field type and delegates operations",
+        "implementation": "AbstractTempoField field = getFieldType(fieldLayout); field.operation(params);",
+        "supported_types": [
+          "TempoTextField", "TempoDropdownField", "TempoCheckboxField", "TempoRadioField",
+          "TempoFileUploadField", "TempoPickerField", "TempoDateField", "TempoDatetimeField",
+          "TempoImageField", "TempoParagraphField", "TempoMilestoneField", "TempoGrid",
+          "TempoButton", "TempoLinkField", "TempoTagField", "TempoReadOnlyField"
+        ]
+      },
+      "interface_implementations": {
+        "Populateable": "populate(fieldLayout, params)",
+        "Verifiable": "contains(fieldLayout, params)",
+        "Clearable": "clear(fieldLayout, params)",
+        "Clickable": "click(params)",
+        "WaitFor": "waitFor(params)",
+        "Captureable": "capture(fieldLayout, params)"
+      }
+    },
+
+    "xpath_patterns": {
+      "text_transform": "translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç')",
+      "case_insensitive_contains": "contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)",
+      "field_detection": {
+        "text_field": "input[contains(@class, 'aui-TextInput')]",
+        "dropdown": "select",
+        "checkbox": "input[@type='checkbox']",
+        "radio": "input[@type='radio']",
+        "file_upload": "input[contains(@class, 'gwt-FileUpload')]",
+        "picker": "input[contains(@class, 'gwt-SuggestBox')]"
+      }
+    }
+  }
+}

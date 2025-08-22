@@ -1,0 +1,5 @@
+{
+  "name": "Automated Playwright Test Generator",
+  "description": "A web-based application to generate Playwright test scripts from natural language descriptions using a predefined selector library. Streamlines test automation for QA engineers and developers.",
+  "requestFramePermissions": []
+}

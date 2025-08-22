@@ -1,0 +1,1562 @@
+{
+  "xpathParent": {
+    "original_xpath": "..",
+    "playwright_selector": "..",
+    "description": "parent",
+    "version_found": 1
+  },
+  "xpathAbsoluteMenuLink": {
+    "original_xpath": "//a[starts-with(@class, 'appian-menu-item') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//a[starts-with(@class, 'appian-menu-item') and contains(normalize-space(),{0})]",
+    "description": "menulink",
+    "version_found": 1
+  },
+  "xpathAbsoluteSitePageLink": {
+    "original_xpath": "//li[contains(translate(@title,'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]/descendant::a",
+    "playwright_selector": "//li[contains(normalize-space(), {0})]/descendant::a",
+    "description": "sitepagelink",
+    "version_found": 1
+  },
+  "xpathAbsoluteSiteLogoutLink": {
+    "original_xpath": "",
+    "playwright_selector": "//li[contains(normalize-space(), {0})]/descendant::a",
+    "description": "sitelogoutlink",
+    "version_found": 1
+  },
+  "xpathAbsoluteSiteUserProfileLink": {
+    "original_xpath": "",
+    "playwright_selector": "//li[contains(normalize-space(), {0})]/descendant::a",
+    "description": "siteuserprofilelink",
+    "version_found": 1
+  },
+  "xpathAbsoluteLoginAgreeButton": {
+    "original_xpath": "//form[@id = 'notification']/descendant::input[contains(@class, 'btn')]",
+    "playwright_selector": "//form[@id = 'notification']/descendant::input[contains(@class, 'btn')]",
+    "description": "loginagreebutton",
+    "version_found": 1
+  },
+  "xpathAbsoluteLoginSubmitButton": {
+    "original_xpath": "//form[@id = 'loginForm']/descendant::input[contains(@class, 'btn')]",
+    "playwright_selector": "//form[@id = 'loginForm']/descendant::input[contains(@class, 'btn')]",
+    "description": "loginsubmitbutton",
+    "version_found": 1
+  },
+  "xpathAbsoluteLogoutLink": {
+    "original_xpath": "//a[contains(text(),'Sign Out')]",
+    "playwright_selector": "//a[contains(text(),'Sign Out')]",
+    "description": "logoutlink",
+    "version_found": 1
+  },
+  "xpathAbsoluteSearchField": {
+    "original_xpath": "//div[contains(@class, 'appian-tempo-search')]/descendant::input",
+    "playwright_selector": "//div[contains(@class, 'appian-tempo-search')]/descendant::input",
+    "description": "searchfield",
+    "version_found": 1
+  },
+  "xpathAbsoluteFeedEntry": {
+    "original_xpath": "//div[contains(@class, 'appian-feed-entry')] | //table",
+    "playwright_selector": "//div[contains(@class, 'appian-feed-entry')] | //table",
+    "description": "feedentry",
+    "version_found": 1
+  },
+  "xpathAbsoluteError": {
+    "original_xpath": "//h1[contains(text(), 'Application Error')] | //div[contains(@class, 'gwt-PopupPanel') and contains(@class, 'error')] ",
+    "playwright_selector": "//h1[contains(text(), 'Application Error')] | //div[contains(@class, 'gwt-PopupPanel') and contains(@class, 'error')] ",
+    "description": "error",
+    "version_found": 1
+  },
+  "xpathAbsoluteWorking": {
+    "original_xpath": "//div[@class = 'appian-indicator-message']",
+    "playwright_selector": "//div[@class = 'appian-indicator-message']",
+    "description": "working",
+    "version_found": 1
+  },
+  "xpathAbsoluteNewsItem": {
+    "original_xpath": "//div[starts-with(@class, 'appian-feed-entry-message') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]",
+    "playwright_selector": "//div[starts-with(@class, 'appian-feed-entry-message') and contains(normalize-space(), {0})]",
+    "description": "newsitem",
+    "version_found": 1
+  },
+  "xpathConcatNewsItemMoreInfoLink": {
+    "original_xpath": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(text(), 'More Info') or contains(text(), 'Hide Info')]",
+    "playwright_selector": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(text(), 'More Info') or contains(text(), 'Hide Info')]",
+    "description": "concatnewsitemmoreinfolink",
+    "version_found": 1
+  },
+  "xpathConcatNewsItemMoreInfoLabel": {
+    "original_xpath": "/following-sibling::table/descendant::td[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %2$s)]",
+    "playwright_selector": "/following-sibling::table/descendant::td[contains(normalize-space(), {1})]",
+    "description": "concatnewsitemmoreinfolabel",
+    "version_found": 1
+  },
+  "xpathConcatNewsItemMoreInfoValue": {
+    "original_xpath": "/following-sibling::table/descendant::td[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %2$s)]",
+    "playwright_selector": "/following-sibling::table/descendant::td[contains(normalize-space(), {1})]",
+    "description": "concatnewsitemmoreinfovalue",
+    "version_found": 1
+  },
+  "xpathConcatNewsItemRecordTag": {
+    "original_xpath": "/parent::div/descendant::a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %2$s)]",
+    "playwright_selector": "/parent::div/descendant::a[contains(normalize-space(), {1})]",
+    "description": "concatnewsitemrecordtag",
+    "version_found": 1
+  },
+  "xpathConcatNewsItemComment": {
+    "original_xpath": "/parent::div/descendant::div[starts-with(@class, 'appian-feed-entry-message') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %2$s)]",
+    "playwright_selector": "/parent::div/descendant::div[starts-with(@class, 'appian-feed-entry-message') and contains(normalize-space(), {1})]",
+    "description": "concatnewsitemcomment",
+    "version_found": 1
+  },
+  "xpathConcatNewsItemDeleteLink": {
+    "original_xpath": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(text(),'Delete')]",
+    "playwright_selector": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(text(),'Delete')]",
+    "description": "concatnewsitemdeletelink",
+    "version_found": 1
+  },
+  "xpathAbsoluteDeleteLink": {
+    "original_xpath": "//a[contains(text(), 'Delete')]",
+    "playwright_selector": "//a[contains(text(), 'Delete')]",
+    "description": "deletelink",
+    "version_found": 1
+  },
+  "xpathAbsoluteTaskLink": {
+    "original_xpath": "//a[contains(@class, 'appian-feed-entry-author') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]",
+    "playwright_selector": "//a[contains(@class, 'appian-feed-entry-author') and contains(normalize-space(), {0})]",
+    "description": "tasklink",
+    "version_found": 1
+  },
+  "xpathAbsoluteTaskDeadline": {
+    "original_xpath": "//a[contains(@class, 'appian-feed-entry-author') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div[contains(@class, 'metadata')]/descendant::span[contains(@title, 'deadline')]/span[text() = %2$s]",
+    "playwright_selector": "//a[contains(@class, 'appian-feed-entry-author') and contains(normalize-space(),{0})]/parent::span/following-sibling::div[contains(@class, 'metadata')]/descendant::span[contains(@title, 'deadline')]/span[text() = {1}]",
+    "description": "taskdeadline",
+    "version_found": 1
+  },
+  "xpathAbsoluteTaskReportLink": {
+    "original_xpath": "//a[span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]]",
+    "playwright_selector": "//a[span[contains(normalize-space(), {0})]]",
+    "description": "taskreportlink",
+    "version_found": 1
+  },
+  "xpathAbsoluteSocialTaskItem": {
+    "original_xpath": "//div[starts-with(@class, 'appian-feed-entry') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]",
+    "playwright_selector": "//div[starts-with(@class, 'appian-feed-entry') and contains(normalize-space(), {0})]",
+    "description": "socialtaskitem",
+    "version_found": 1
+  },
+  "xpathConcatSocialTaskItemComment": {
+    "original_xpath": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(text(),'Comment')]",
+    "playwright_selector": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(text(),'Comment')]",
+    "description": "concatsocialtaskitemcomment",
+    "version_found": 1
+  },
+  "xpathConcatSocialTaskItemClose": {
+    "original_xpath": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(text(),'Close')]",
+    "playwright_selector": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(text(),'Close')]",
+    "description": "concatsocialtaskitemclose",
+    "version_found": 1
+  },
+  "xpathConcatSocialTaskItemDelete": {
+    "original_xpath": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(text(),'Delete')]",
+    "playwright_selector": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(text(),'Delete')]",
+    "description": "concatsocialtaskitemdelete",
+    "version_found": 1
+  },
+  "xpathConcatSocialTaskItemCloseCommentBox": {
+    "original_xpath": "/following-sibling::div/descendant::textarea[contains(@placeholder, 'Type comments here (optional)')]",
+    "playwright_selector": "/following-sibling::div/descendant::textarea[contains(@placeholder, 'Type comments here (optional)')]",
+    "description": "concatsocialtaskitemclosecommentbox",
+    "version_found": 1
+  },
+  "xpathConcatSocialTaskItemCloseCommentButton": {
+    "original_xpath": "/following-sibling::div/descendant::button[contains(text(), 'Close')]",
+    "playwright_selector": "/following-sibling::div/descendant::button[contains(text(), 'Close')]",
+    "description": "concatsocialtaskitemclosecommentbutton",
+    "version_found": 1
+  },
+  "xpathAbsoluteRecordTypeLink": {
+    "original_xpath": "//a[contains(@href, '/tempo/records/type') and contains(@href, '/view/all') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//a[contains(@href, '/tempo/records/type') and contains(@href, '/view/all') and contains(normalize-space(),{0})]",
+    "description": "recordtypelink",
+    "version_found": 1
+  },
+  "xpathAbsoluteRecordTypeUserFilterDropdown": {
+    "original_xpath": "",
+    "playwright_selector": "//a[contains(@href, '/tempo/records/type') and contains(@href, '/view/all') and contains(normalize-space(),{0})]",
+    "description": "recordtypeuserfilterdropdown",
+    "version_found": 1
+  },
+  "xpathAbsoluteRecordTypeUserFilterLabel": {
+    "original_xpath": "//ol[@class='facetgroup']/descendant::a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//ol[@class='facetgroup']/descendant::a[contains(normalize-space(),{0})]",
+    "description": "recordtypeuserfilterlabel",
+    "version_found": 1
+  },
+  "xpathAbsoluteRecordTypeUserFilterValue": {
+    "original_xpath": "",
+    "playwright_selector": "//ol[@class='facetgroup']/descendant::a[contains(normalize-space(),{0})]",
+    "description": "recordtypeuserfiltervalue",
+    "version_found": 1
+  },
+  "xpathAbsoluteRecordTypeUserFilterClear": {
+    "original_xpath": "",
+    "playwright_selector": "//ol[@class='facetgroup']/descendant::a[contains(normalize-space(),{0})]",
+    "description": "recordtypeuserfilterclear",
+    "version_found": 1
+  },
+  "xpathAbsoluteRecordLink": {
+    "original_xpath": "//a[contains(@href, '/tempo/records/type') and contains(@href, '/item/') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//a[contains(@href, '/tempo/records/type') and contains(@href, '/item/') and contains(normalize-space(),{0})]",
+    "description": "recordlink",
+    "version_found": 1
+  },
+  "xpathAbsoluteRecordIndexLink": {
+    "original_xpath": "(//a[contains(@href, '/tempo/records/type') and contains(@href, '/item/')])[%1$d]",
+    "playwright_selector": "(//a[contains(@href, '/tempo/records/type') and contains(@href, '/item/')])[%1$d]",
+    "description": "recordindexlink",
+    "version_found": 1
+  },
+  "xpathAbsoluteRecordViewLink": {
+    "original_xpath": "//a[contains(@href, '/tempo/records/type') and contains(@href, '/item/')]/span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//a[contains(@href, '/tempo/records/type') and contains(@href, '/item/')]/span[contains(normalize-space(),{0})]",
+    "description": "recordviewlink",
+    "version_found": 1
+  },
+  "xpathAbsoluteRecordRelatedActionLink": {
+    "original_xpath": "//a[(starts-with(@class, 'aui-ActionLink') or starts-with(@class, 'gwt-Anchor')) and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//a[(starts-with(@class, 'aui-ActionLink') or starts-with(@class, 'gwt-Anchor')) and contains(normalize-space(),{0})]",
+    "description": "recordrelatedactionlink",
+    "version_found": 1
+  },
+  "xpathAbsoluteReportLink": {
+    "original_xpath": "//a[contains(@class, 'appian-feed-entry-author') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//a[contains(@class, 'appian-feed-entry-author') and contains(normalize-space(),{0})]",
+    "description": "reportlink",
+    "version_found": 1
+  },
+  "xpathAbsoluteActionLink": {
+    "original_xpath": "//a[starts-with(@class, 'aui-ActionLink') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//a[starts-with(@class, 'aui-ActionLink') and contains(normalize-space(),{0})]",
+    "description": "actionlink",
+    "version_found": 1
+  },
+  "xpathConcatActionStar": {
+    "original_xpath": "/following-sibling::img[contains(@class, 'aui-Action-Star')]",
+    "playwright_selector": "/following-sibling::img[contains(@class, 'aui-Action-Star')]",
+    "description": "concatactionstar",
+    "version_found": 1
+  },
+  "xpathAbsoluteActionsAppFilterLink": {
+    "original_xpath": "//ol[@class='facetgroup']/descendant::span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//ol[@class='facetgroup']/descendant::span[contains(normalize-space(),{0})]",
+    "description": "actionsappfilterlink",
+    "version_found": 1
+  },
+  "xpathAbsoluteFormTitle": {
+    "original_xpath": "//h2",
+    "playwright_selector": "//h2",
+    "description": "formtitle",
+    "version_found": 1
+  },
+  "xpathAbsoluteFormInstructions": {
+    "original_xpath": "//h2/following-sibling::p",
+    "playwright_selector": "//h2/following-sibling::p",
+    "description": "forminstructions",
+    "version_found": 1
+  },
+  "xpathAbsoluteFieldLayoutLabel": {
+    "original_xpath": "//*[(self::label or self::span) and starts-with(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::*/following-sibling::div/descendant::div[contains(@class, 'aui_FieldLayout_InputContainer')]",
+    "playwright_selector": "//*[(self::label or self::span) and starts-with(normalize-space(),{0})]/parent::*/following-sibling::div/descendant::div[contains(@class, 'aui_FieldLayout_InputContainer')]",
+    "description": "fieldlayoutlabel",
+    "version_found": 1
+  },
+  "xpathAbsoluteFieldLayoutIndex": {
+    "original_xpath": "(//div[contains(@class, 'aui_FieldLayout_InputContainer')])[%1$d]",
+    "playwright_selector": "(//div[contains(@class, 'aui_FieldLayout_InputContainer')])[%1$d]",
+    "description": "fieldlayoutindex",
+    "version_found": 1
+  },
+  "xpathConcatAncestorFieldLayout": {
+    "original_xpath": "/ancestor::div[contains(@class, 'aui_FieldLayout_InputContainer')][position()=1]",
+    "playwright_selector": "/ancestor::div[contains(@class, 'aui_FieldLayout_InputContainer')][position()=1]",
+    "description": "concatancestorfieldlayout",
+    "version_found": 1
+  },
+  "xpathAbsoluteButton": {
+    "original_xpath": "//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s) and not(contains(@class, 'button-disabled'))]",
+    "playwright_selector": "//button[contains(normalize-space(),{0}) and not(contains(@class, 'button-disabled'))]",
+    "description": "button",
+    "version_found": 1
+  },
+  "xpathRelativeButton": {
+    "original_xpath": ".//button",
+    "playwright_selector": ".//button",
+    "description": "button",
+    "version_found": 1
+  },
+  "xpathAbsoluteAcceptButton": {
+    "original_xpath": "//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s) and not(contains(@class, 'button-disabled'))]",
+    "playwright_selector": "//button[contains(normalize-space(),{0}) and not(contains(@class, 'button-disabled'))]",
+    "description": "acceptbutton",
+    "version_found": 1
+  },
+  "xpathAbsoluteTextFieldLabel": {
+    "original_xpath": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::input",
+    "playwright_selector": "//label[contains(normalize-space(),{0})]/parent::span/following-sibling::div/descendant::input",
+    "description": "textfieldlabel",
+    "version_found": 1
+  },
+  "xpathAbsoluteTextFieldIndex": {
+    "original_xpath": "(//input[contains(@class, 'aui-TextInput')])[%1$d]",
+    "playwright_selector": "(//input[contains(@class, 'aui-TextInput')])[%1$d]",
+    "description": "textfieldindex",
+    "version_found": 1
+  },
+  "xpathRelativeTextFieldInput": {
+    "original_xpath": ".//input[contains(@class, 'aui-TextInput')]",
+    "playwright_selector": ".//input[contains(@class, 'aui-TextInput')]",
+    "description": "textfieldinput",
+    "version_found": 1
+  },
+  "xpathAbsoluteImageFieldLabel": {
+    "original_xpath": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::img",
+    "playwright_selector": "//label[contains(normalize-space(),{0})]/parent::span/following-sibling::div/descendant::img",
+    "description": "imagefieldlabel",
+    "version_found": 1
+  },
+  "xpathAbsoluteImageFieldIndex": {
+    "original_xpath": "(//img[contains(@class, 'SafeImage')])[%1$d]",
+    "playwright_selector": "(//img[contains(@class, 'SafeImage')])[%1$d]",
+    "description": "imagefieldindex",
+    "version_found": 1
+  },
+  "xpathRelativeImageFieldInput": {
+    "original_xpath": ".//img[contains(@class, 'SafeImage')]",
+    "playwright_selector": ".//img[contains(@class, 'SafeImage')]",
+    "description": "imagefieldinput",
+    "version_found": 1
+  },
+  "xpathAbsoluteIntegerFieldLabel": {
+    "original_xpath": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/div/input",
+    "playwright_selector": "//label[contains(normalize-space(),{0})]/parent::span/following-sibling::div/div/input",
+    "description": "integerfieldlabel",
+    "version_found": 1
+  },
+  "xpathRelativeIntegerFieldInput": {
+    "original_xpath": ".//input[contains(@class, 'aui-TextInput')]",
+    "playwright_selector": ".//input[contains(@class, 'aui-TextInput')]",
+    "description": "integerfieldinput",
+    "version_found": 1
+  },
+  "xpathAbsoluteParagraphFieldLabel": {
+    "original_xpath": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::textarea",
+    "playwright_selector": "//label[contains(normalize-space(),{0})]/parent::span/following-sibling::div/descendant::textarea",
+    "description": "paragraphfieldlabel",
+    "version_found": 1
+  },
+  "xpathAbsoluteParagraphFieldIndex": {
+    "original_xpath": "(//textarea[contains(@class, 'aui-TextAreaInput')])[%1$d]",
+    "playwright_selector": "(//textarea[contains(@class, 'aui-TextAreaInput')])[%1$d]",
+    "description": "paragraphfieldindex",
+    "version_found": 1
+  },
+  "xpathRelativeParagraphFieldInput": {
+    "original_xpath": ".//textarea[contains(@class, 'aui-TextAreaInput')]",
+    "playwright_selector": ".//textarea[contains(@class, 'aui-TextAreaInput')]",
+    "description": "paragraphfieldinput",
+    "version_found": 1
+  },
+  "xpathAbsoluteCheckboxFieldLabel": {
+    "original_xpath": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::input[type='checkbox']",
+    "playwright_selector": "//span[contains(normalize-space(),{0})]/parent::span/following-sibling::div/descendant::input[type='checkbox']",
+    "description": "checkboxfieldlabel",
+    "version_found": 1
+  },
+  "xpathAbsoluteCheckboxFieldIndex": {
+    "original_xpath": "(//input[@type='checkbox'])[%1$d]",
+    "playwright_selector": "(//input[@type='checkbox'])[%1$d]",
+    "description": "checkboxfieldindex",
+    "version_found": 1
+  },
+  "xpathRelativeCheckboxFieldChoiceLabel": {
+    "original_xpath": ".//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]/preceding-sibling::input",
+    "playwright_selector": ".//label[contains(normalize-space(), {0})]/preceding-sibling::input",
+    "description": "checkboxfieldchoicelabel",
+    "version_found": 1
+  },
+  "xpathRelativeCheckboxFieldChoiceIndex": {
+    "original_xpath": "(.//input[@type='checkbox'])[%1$d]",
+    "playwright_selector": "(.//input[@type='checkbox'])[%1$d]",
+    "description": "checkboxfieldchoiceindex",
+    "version_found": 1
+  },
+  "xpathRelativeCheckboxFieldInput": {
+    "original_xpath": ".//input[contains(@type, 'checkbox')]",
+    "playwright_selector": ".//input[contains(@type, 'checkbox')]",
+    "description": "checkboxfieldinput",
+    "version_found": 1
+  },
+  "xpathRelativeCheckboxFieldInputSpan": {
+    "original_xpath": ".//span[input[contains(@type, 'checkbox')]]",
+    "playwright_selector": ".//span[input[contains(@type, 'checkbox')]]",
+    "description": "checkboxfieldinputspan",
+    "version_found": 1
+  },
+  "xpathAbsoluteCheckboxFieldOption": {
+    "original_xpath": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]/preceding-sibling::input[@type='checkbox']",
+    "playwright_selector": "//label[contains(normalize-space(), {0})]/preceding-sibling::input[@type='checkbox']",
+    "description": "checkboxfieldoption",
+    "version_found": 1
+  },
+  "xpathAbsoluteRadioFieldLabel": {
+    "original_xpath": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::input",
+    "playwright_selector": "//span[contains(normalize-space(),{0})]/parent::span/following-sibling::div/descendant::input",
+    "description": "radiofieldlabel",
+    "version_found": 1
+  },
+  "xpathRelativeRadioFieldChoiceLabel": {
+    "original_xpath": ".//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]/preceding-sibling::input",
+    "playwright_selector": ".//label[contains(normalize-space(), {0})]/preceding-sibling::input",
+    "description": "radiofieldchoicelabel",
+    "version_found": 1
+  },
+  "xpathRelativeRadioFieldChoiceIndex": {
+    "original_xpath": "(.//input[@type='radio'])[%1$d]",
+    "playwright_selector": "(.//input[@type='radio'])[%1$d]",
+    "description": "radiofieldchoiceindex",
+    "version_found": 1
+  },
+  "xpathRelativeRadioButtonGroup": {
+    "original_xpath": ".//div[contains(@class, 'RadioButtonGroup')]",
+    "playwright_selector": ".//div[contains(@class, 'RadioButtonGroup')]",
+    "description": "radiobuttongroup",
+    "version_found": 1
+  },
+  "xpathRelativeRadioFieldInputSpan": {
+    "original_xpath": ".//span[input[@type='radio']]",
+    "playwright_selector": ".//span[input[@type='radio']]",
+    "description": "radiofieldinputspan",
+    "version_found": 1
+  },
+  "xpathAbsoluteRadioFieldOption": {
+    "original_xpath": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]/preceding-sibling::input[@type='radio']",
+    "playwright_selector": "//label[contains(normalize-space(), {0})]/preceding-sibling::input[@type='radio']",
+    "description": "radiofieldoption",
+    "version_found": 1
+  },
+  "xpathAbsoluteDropdownFieldIndex": {
+    "original_xpath": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::div/select",
+    "playwright_selector": "//span[contains(normalize-space(),{0})]/parent::span/following-sibling::div/descendant::div/select",
+    "description": "dropdownfieldindex",
+    "version_found": 1
+  },
+  "xpathRelativeDropdownFieldInput": {
+    "original_xpath": ".//select",
+    "playwright_selector": ".//select",
+    "description": "dropdownfieldinput",
+    "version_found": 1
+  },
+  "xpathAbsoluteDateFieldInput": {
+    "original_xpath": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::input[contains(@class, 'aui-DateInput-TextBox')]",
+    "playwright_selector": "//label[contains(normalize-space(),{0})]/parent::span/following-sibling::div/descendant::input[contains(@class, 'aui-DateInput-TextBox')]",
+    "description": "datefieldinput",
+    "version_found": 1
+  },
+  "xpathRelativeDateFieldPlaceholder": {
+    "original_xpath": ".//input[contains(@class, 'aui-DateInput-Placeholder')]",
+    "playwright_selector": ".//input[contains(@class, 'aui-DateInput-Placeholder')]",
+    "description": "datefieldplaceholder",
+    "version_found": 1
+  },
+  "xpathRelativeDateFieldInput": {
+    "original_xpath": ".//input[contains(@class, 'aui-DateInput-TextBox')]",
+    "playwright_selector": ".//input[contains(@class, 'aui-DateInput-TextBox')]",
+    "description": "datefieldinput",
+    "version_found": 1
+  },
+  "xpathAbsoluteDatetimeFieldDateInput": {
+    "original_xpath": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::input[contains(@class, 'aui-DateInput-TextBox')]",
+    "playwright_selector": "//span[contains(normalize-space(),{0})]/parent::span/following-sibling::div/descendant::input[contains(@class, 'aui-DateInput-TextBox')]",
+    "description": "datetimefielddateinput",
+    "version_found": 1
+  },
+  "xpathRelativeDatetimeFieldDatePlaceholder": {
+    "original_xpath": ".//input[contains(@class, 'aui-DateInput-Placeholder')]",
+    "playwright_selector": ".//input[contains(@class, 'aui-DateInput-Placeholder')]",
+    "description": "datetimefielddateplaceholder",
+    "version_found": 1
+  },
+  "xpathRelativeDatetimeFieldDateInput": {
+    "original_xpath": ".//input[contains(@class, 'aui-DateInput-TextBox')]",
+    "playwright_selector": ".//input[contains(@class, 'aui-DateInput-TextBox')]",
+    "description": "datetimefielddateinput",
+    "version_found": 1
+  },
+  "xpathAbsoluteDatetimeFieldTimeInput": {
+    "original_xpath": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::input[contains(@class, 'aui-TimeInput-TextBox')]",
+    "playwright_selector": "//span[contains(normalize-space(),{0})]/parent::span/following-sibling::div/descendant::input[contains(@class, 'aui-TimeInput-TextBox')]",
+    "description": "datetimefieldtimeinput",
+    "version_found": 1
+  },
+  "xpathRelativeDatetimeFieldTimePlaceholder": {
+    "original_xpath": ".//input[contains(@class, 'aui-TimeInput-Placeholder')]",
+    "playwright_selector": ".//input[contains(@class, 'aui-TimeInput-Placeholder')]",
+    "description": "datetimefieldtimeplaceholder",
+    "version_found": 1
+  },
+  "xpathRelativeDatetimeFieldTimeInput": {
+    "original_xpath": ".//input[contains(@class, 'aui-TimeInput-TextBox')]",
+    "playwright_selector": ".//input[contains(@class, 'aui-TimeInput-TextBox')]",
+    "description": "datetimefieldtimeinput",
+    "version_found": 1
+  },
+  "xpathAbsoluteFileUploadFieldLabel": {
+    "original_xpath": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span/following-sibling::div/descendant::input",
+    "playwright_selector": "//label[contains(normalize-space(),{0})]/parent::span/following-sibling::div/descendant::input",
+    "description": "fileuploadfieldlabel",
+    "version_found": 1
+  },
+  "xpathAbsoluteFileUploadFieldIndex": {
+    "original_xpath": "(//input[contains(@class, 'gwt-FileUpload')])[%1$d]",
+    "playwright_selector": "(//input[contains(@class, 'gwt-FileUpload')])[%1$d]",
+    "description": "fileuploadfieldindex",
+    "version_found": 1
+  },
+  "xpathRelativeFileUploadFieldInput": {
+    "original_xpath": ".//input[contains(@class, 'gwt-FileUpload')]",
+    "playwright_selector": ".//input[contains(@class, 'gwt-FileUpload')]",
+    "description": "fileuploadfieldinput",
+    "version_found": 1
+  },
+  "xpathRelativeFileUploadFieldFile": {
+    "original_xpath": ".//span[contains(@class, 'filename')]",
+    "playwright_selector": ".//span[contains(@class, 'filename')]",
+    "description": "fileuploadfieldfile",
+    "version_found": 1
+  },
+  "xpathRelativeFileUploadFieldRemoveLink": {
+    "original_xpath": ".//a[starts-with(text(), 'Remove')]",
+    "playwright_selector": ".//a[starts-with(text(), 'Remove')]",
+    "description": "fileuploadfieldremovelink",
+    "version_found": 1
+  },
+  "xpathRelativeFileUploadFieldWaiting": {
+    "original_xpath": ".//div[contains(@class, 'prgbar-msg')]",
+    "playwright_selector": ".//div[contains(@class, 'prgbar-msg')]",
+    "description": "fileuploadfieldwaiting",
+    "version_found": 1
+  },
+  "xpathAbsolutePickerLabel": {
+    "original_xpath": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::span",
+    "playwright_selector": "//label[contains(normalize-space(),{0})]/parent::span",
+    "description": "pickerlabel",
+    "version_found": 1
+  },
+  "xpathRelativePickerInput": {
+    "original_xpath": ".//input[contains(@class, 'gwt-SuggestBox')]",
+    "playwright_selector": ".//input[contains(@class, 'gwt-SuggestBox')]",
+    "description": "pickerinput",
+    "version_found": 1
+  },
+  "xpathAbsolutePickerSuggestion": {
+    "original_xpath": "//div[contains(@class, 'SuggestBoxPopup')]/descendant::p[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)] | //div[contains(@class, 'SuggestBoxPopup')]/descendant::h2[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//div[contains(@class, 'SuggestBoxPopup')]/descendant::p[contains(normalize-space(),{0})] | //div[contains(@class, 'SuggestBoxPopup')]/descendant::h2[contains(normalize-space(),{0})]",
+    "description": "pickersuggestion",
+    "version_found": 1
+  },
+  "xpathRelativePickerSelection": {
+    "original_xpath": ".//a[@title]",
+    "playwright_selector": ".//a[@title]",
+    "description": "pickerselection",
+    "version_found": 1
+  },
+  "xpathRelativePickerSpecificSelection": {
+    "original_xpath": "/descendant::a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "/descendant::a[contains(normalize-space(),{0})]",
+    "description": "pickerspecificselection",
+    "version_found": 1
+  },
+  "xpathRelativePickerSelectionRemoveLink": {
+    "original_xpath": ".//a/following-sibling::a",
+    "playwright_selector": ".//a/following-sibling::a",
+    "description": "pickerselectionremovelink",
+    "version_found": 1
+  },
+  "xpathRelativePickerSpecificSelectionRemoveLink": {
+    "original_xpath": ".//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/following-sibling::a",
+    "playwright_selector": ".//a[contains(normalize-space(),{0})]/following-sibling::a",
+    "description": "pickerspecificselectionremovelink",
+    "version_found": 1
+  },
+  "xpathRelativePickerSuggestBox": {
+    "original_xpath": "/descendant::input[contains(@class, 'SuggestBox')]",
+    "playwright_selector": "/descendant::input[contains(@class, 'SuggestBox')]",
+    "description": "pickersuggestbox",
+    "version_found": 1
+  },
+  "xpathAbsoluteMilestoneFieldLabel": {
+    "original_xpath": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::div/following-sibling::div/descendant::div[contains(text(), 'Step:')]",
+    "playwright_selector": "//span[contains(normalize-space(),{0})]/parent::div/following-sibling::div/descendant::div[contains(text(), 'Step:')]",
+    "description": "milestonefieldlabel",
+    "version_found": 1
+  },
+  "xpathAbsoluteMilestoneFieldIndex": {
+    "original_xpath": "(//div[contains(text(), 'Step:')]/ancestor::ul)[%1$d]",
+    "playwright_selector": "(//div[contains(text(), 'Step:')]/ancestor::ul)[%1$d]",
+    "description": "milestonefieldindex",
+    "version_found": 1
+  },
+  "xpathRelativeMilestoneStepGeneral": {
+    "original_xpath": ".//descendant::div[contains(text(), 'Step:')]",
+    "playwright_selector": ".//descendant::div[contains(text(), 'Step:')]",
+    "description": "milestonestepgeneral",
+    "version_found": 1
+  },
+  "xpathRelativeMilestoneStepSelected": {
+    "original_xpath": ".//descendant::div[contains(@class, 'accessibilityhidden') and starts-with(text(), 'Current Step:')]/following-sibling::*[1]",
+    "playwright_selector": ".//descendant::div[contains(@class, 'accessibilityhidden') and starts-with(text(), 'Current Step:')]/following-sibling::*[1]",
+    "description": "milestonestepselected",
+    "version_found": 1
+  },
+  "xpathRelativeMilestoneStep": {
+    "original_xpath": ".//descendant::*[starts-with(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": ".//descendant::*[starts-with(normalize-space(),{0})]",
+    "description": "milestonestep",
+    "version_found": 1
+  },
+  "xpathRelativeMilestoneStepIndex": {
+    "original_xpath": "(.//descendant::div[contains(@class, 'accessibilityhidden') and contains(text(), 'Step:')])[%1$d]/following-sibling::div/descendant::a",
+    "playwright_selector": "(.//descendant::div[contains(@class, 'accessibilityhidden') and contains(text(), 'Step:')])[%1$d]/following-sibling::div/descendant::a",
+    "description": "milestonestepindex",
+    "version_found": 1
+  },
+  "xpathAbsoluteLink": {
+    "original_xpath": "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)] | //a//*[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/..",
+    "playwright_selector": "//a[contains(normalize-space(),{0})] | //a//*[contains(normalize-space(),{0})]/..",
+    "description": "link",
+    "version_found": 1
+  },
+  "xpathAbsoluteLinkFieldLabel": {
+    "original_xpath": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::div/following-sibling::div/descendant::div/a",
+    "playwright_selector": "//label[contains(normalize-space(),{0})]/parent::div/following-sibling::div/descendant::div/a",
+    "description": "linkfieldlabel",
+    "version_found": 1
+  },
+  "xpathAbsoluteLinkFieldIndex": {
+    "original_xpath": "(//div/a",
+    "playwright_selector": "(//div/a",
+    "description": "linkfieldindex",
+    "version_found": 1
+  },
+  "xpathRelativeLinkFieldLink": {
+    "original_xpath": ".//div/a",
+    "playwright_selector": ".//div/a",
+    "description": "linkfieldlink",
+    "version_found": 1
+  },
+  "xpathAbsoluteGridByIndex": {
+    "original_xpath": "((//div[contains(@class, 'DataGrid-Table')]/descendant::table)[%1$d])/ancestor::div[contains(@class, 'aui_FieldLayout_InputContainer')][position()=1]",
+    "playwright_selector": "((//div[contains(@class, 'DataGrid-Table')]/descendant::table)[%1$d])/ancestor::div[contains(@class, 'aui_FieldLayout_InputContainer')][position()=1]",
+    "description": "gridbyindex",
+    "version_found": 1
+  },
+  "xpathAbsoluteGridByLabel": {
+    "original_xpath": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::div/following-sibling::div/descendant::table/ancestor::div[contains(@class, 'aui_FieldLayout_InputContainer')][position()=1]",
+    "playwright_selector": "//span[contains(normalize-space(),{0})]/parent::div/following-sibling::div/descendant::table/ancestor::div[contains(@class, 'aui_FieldLayout_InputContainer')][position()=1]",
+    "description": "gridbylabel",
+    "version_found": 1
+  },
+  "xpathRelativeColumnLabelCount": {
+    "original_xpath": "./descendant::thead/descendant::th[descendant::*[translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç')=%1$s]]/preceding-sibling::th",
+    "playwright_selector": "./descendant::thead/descendant::th[descendant::*[normalize-space()={0}]]/preceding-sibling::th",
+    "description": "columnlabelcount",
+    "version_found": 1
+  },
+  "xpathRelativeGridCell": {
+    "original_xpath": ".//tbody/tr[%1$d]/*[(self::td or self::th)][%2$d]",
+    "playwright_selector": ".//tbody/tr[%1$d]/*[(self::td or self::th)][%2$d]",
+    "description": "gridcell",
+    "version_found": 1
+  },
+  "xpathRelativeGridField": {
+    "original_xpath": ".//div[contains(@class, 'DataGrid-Table')]",
+    "playwright_selector": ".//div[contains(@class, 'DataGrid-Table')]",
+    "description": "gridfield",
+    "version_found": 1
+  },
+  "xpathRelativeGridCheckbox": {
+    "original_xpath": ".//input[@type='checkbox']",
+    "playwright_selector": ".//input[@type='checkbox']",
+    "description": "gridcheckbox",
+    "version_found": 1
+  },
+  "xpathRelativeGridAddRowLink": {
+    "original_xpath": ".//tfoot//a",
+    "playwright_selector": ".//tfoot//a",
+    "description": "gridaddrowlink",
+    "version_found": 1
+  },
+  "xpathRelativeGridHeaderRow": {
+    "original_xpath": ".//thead/descendant::tr",
+    "playwright_selector": ".//thead/descendant::tr",
+    "description": "gridheaderrow",
+    "version_found": 1
+  },
+  "xpathRelativeGridRow": {
+    "original_xpath": ".//tbody/descendant::tr",
+    "playwright_selector": ".//tbody/descendant::tr",
+    "description": "gridrow",
+    "version_found": 1
+  },
+  "xpathRelativeGridColumn": {
+    "original_xpath": "./descendant::*[(self::td or self::th)]",
+    "playwright_selector": "./descendant::*[(self::td or self::th)]",
+    "description": "gridcolumn",
+    "version_found": 1
+  },
+  "xpathRelativeGridCellLink": {
+    "original_xpath": ".//img|.//a",
+    "playwright_selector": ".//img|.//a",
+    "description": "gridcelllink",
+    "version_found": 1
+  },
+  "xpathRelativeGridFirstPageLink": {
+    "original_xpath": ".//img[contains(@aria-label, 'First page')]",
+    "playwright_selector": ".//img[contains(@aria-label, 'First page')]",
+    "description": "gridfirstpagelink",
+    "version_found": 1
+  },
+  "xpathRelativeGridPreviousPageLink": {
+    "original_xpath": ".//img[contains(@aria-label, 'Previous page')]",
+    "playwright_selector": ".//img[contains(@aria-label, 'Previous page')]",
+    "description": "gridpreviouspagelink",
+    "version_found": 1
+  },
+  "xpathRelativeGridNextPageLink": {
+    "original_xpath": ".//img[contains(@aria-label, 'Next page')]",
+    "playwright_selector": ".//img[contains(@aria-label, 'Next page')]",
+    "description": "gridnextpagelink",
+    "version_found": 1
+  },
+  "xpathRelativeGridLastPageLink": {
+    "original_xpath": ".//img[contains(@aria-label, 'Last page')]",
+    "playwright_selector": ".//img[contains(@aria-label, 'Last page')]",
+    "description": "gridlastpagelink",
+    "version_found": 1
+  },
+  "xpathRelativeGridColumnLink": {
+    "original_xpath": ".//thead//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]",
+    "playwright_selector": ".//thead//a[contains(normalize-space(), {0})]",
+    "description": "gridcolumnlink",
+    "version_found": 1
+  },
+  "xpathRelativeGridSelectAllColumn": {
+    "original_xpath": ".//thead//input[@type='checkbox']",
+    "playwright_selector": ".//thead//input[@type='checkbox']",
+    "description": "gridselectallcolumn",
+    "version_found": 1
+  },
+  "xpathRelativeGridPagingLabel": {
+    "original_xpath": ".//div[contains(@class, 'gwt-HTML')]",
+    "playwright_selector": ".//div[contains(@class, 'gwt-HTML')]",
+    "description": "gridpaginglabel",
+    "version_found": 1
+  },
+  "xpathConditionSectionContains": {
+    "original_xpath": "",
+    "playwright_selector": ".//div[contains(@class, 'gwt-HTML')]",
+    "description": "conditionsectioncontains",
+    "version_found": 1
+  },
+  "xpathAbsoluteSectionFieldLayout": {
+    "original_xpath": "//h3[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::div/following-sibling::div/descendant::*[starts-with(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%2$s)]/parent::*/following-sibling::div/descendant::div[contains(@class, 'aui_FieldLayout_InputContainer')]",
+    "playwright_selector": "//h3[contains(normalize-space(),{0})]/parent::div/following-sibling::div/descendant::*[starts-with(normalize-space(),{1})]/parent::*/following-sibling::div/descendant::div[contains(@class, 'aui_FieldLayout_InputContainer')]",
+    "description": "sectionfieldlayout",
+    "version_found": 1
+  },
+  "xpathAbsoluteSectionFieldLayoutIndex": {
+    "original_xpath": "//h3[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::div/following-sibling::div/descendant::div[contains(@class, 'aui_FieldLayout_InputContainer')][%2$d]",
+    "playwright_selector": "//h3[contains(normalize-space(),{0})]/parent::div/following-sibling::div/descendant::div[contains(@class, 'aui_FieldLayout_InputContainer')][%2$d]",
+    "description": "sectionfieldlayoutindex",
+    "version_found": 1
+  },
+  "xpathRelativeSectionValidationMessageSpecificValue": {
+    "original_xpath": "/descendant::p[contains(@class, 'validationMessage') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]",
+    "playwright_selector": "/descendant::p[contains(@class, 'validationMessage') and contains(normalize-space(), {0})]",
+    "description": "sectionvalidationmessagespecificvalue",
+    "version_found": 1
+  },
+  "xpathRelativeSectionValidationMessage": {
+    "original_xpath": "./descendant::p[contains(@class, 'validationMessage')]",
+    "playwright_selector": "./descendant::p[contains(@class, 'validationMessage')]",
+    "description": "sectionvalidationmessage",
+    "version_found": 1
+  },
+  "xpathAbsoluteSectionLayout": {
+    "original_xpath": "//h3[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/ancestor::div[contains(@class, 'aui-Section')]",
+    "playwright_selector": "//h3[contains(normalize-space(),{0})]/ancestor::div[contains(@class, 'aui-Section')]",
+    "description": "sectionlayout",
+    "version_found": 1
+  },
+  "xpathRelativeSectionToggle": {
+    "original_xpath": ".//a[contains(@title, 'Collapse') or contains(@title, 'Expand')]",
+    "playwright_selector": ".//a[contains(@title, 'Collapse') or contains(@title, 'Expand')]",
+    "description": "sectiontoggle",
+    "version_found": 1
+  },
+  "xpathRelativeFieldLayout": {
+    "original_xpath": ".//div[contains(@class, 'aui_FieldLayout_InputContainer')]",
+    "playwright_selector": ".//div[contains(@class, 'aui_FieldLayout_InputContainer')]",
+    "description": "fieldlayout",
+    "version_found": 1
+  },
+  "xpathRelativeReadOnlyField": {
+    "original_xpath": ".//p[contains(@class, 'readonly')] | div[ancestor::div[contains(@class, 'DataGrid-Container')]]",
+    "playwright_selector": ".//p[contains(@class, 'readonly')] | div[ancestor::div[contains(@class, 'DataGrid-Container')]]",
+    "description": "readonlyfield",
+    "version_found": 1
+  },
+  "xpathRelativeFieldValidationMessageSpecificValue": {
+    "original_xpath": "/ancestor::div[contains(@class, 'aui_FieldLayout')][position()=1]/descendant::p[contains(@class, 'component_error') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]",
+    "playwright_selector": "/ancestor::div[contains(@class, 'aui_FieldLayout')][position()=1]/descendant::p[contains(@class, 'component_error') and contains(normalize-space(), {0})]",
+    "description": "fieldvalidationmessagespecificvalue",
+    "version_found": 1
+  },
+  "xpathRelativeFieldValidationMessage": {
+    "original_xpath": "./ancestor::div[contains(@class, 'aui_FieldLayout')][position()=1]/descendant::p[contains(@class, 'component_error')]",
+    "playwright_selector": "./ancestor::div[contains(@class, 'aui_FieldLayout')][position()=1]/descendant::p[contains(@class, 'component_error')]",
+    "description": "fieldvalidationmessage",
+    "version_found": 1
+  },
+  "xpathAbsoluteChartLabel": {
+    "original_xpath": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//span[contains(normalize-space(),{0})]",
+    "description": "chartlabel",
+    "version_found": 1
+  },
+  "xpathAbsoluteSaveChanges": {
+    "original_xpath": "//a[contains(@class,'appian-form-close') and contains(text(), 'Save Changes')]",
+    "playwright_selector": "//a[contains(@class,'appian-form-close') and contains(text(), 'Save Changes')]",
+    "description": "savechanges",
+    "version_found": 1
+  },
+  "xpathAbsoluteFormSavedConfirmation": {
+    "original_xpath": "//div[@id='inlineConfirmMessage' and contains(text(), 'Form saved successfully')]",
+    "playwright_selector": "//div[@id='inlineConfirmMessage' and contains(text(), 'Form saved successfully')]",
+    "description": "formsavedconfirmation",
+    "version_found": 1
+  },
+  "xpathAbsoluteRecordGridColumnSortLink": {
+    "original_xpath": "//div[contains(@class, 'DataGrid-Table')]/descendant::table/thead//a[translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç')=%1$s]",
+    "playwright_selector": "//div[contains(@class, 'DataGrid-Table')]/descendant::table/thead//a[normalize-space()={0}]",
+    "description": "recordgridcolumnsortlink",
+    "version_found": 3
+  },
+  "xpathAbsoluteRecordGridNavigationFirst": {
+    "original_xpath": "//div[contains(@class, 'DataGrid-Table')]/descendant::table/tfoot//a[@title='First']",
+    "playwright_selector": "//div[contains(@class, 'DataGrid-Table')]/descendant::table/tfoot//a[@title='First']",
+    "description": "recordgridnavigationfirst",
+    "version_found": 3
+  },
+  "xpathAbsoluteRecordGridNavigationPrevious": {
+    "original_xpath": "//div[contains(@class, 'DataGrid-Table')]/descendant::table/tfoot//a[text()='Previous']",
+    "playwright_selector": "//div[contains(@class, 'DataGrid-Table')]/descendant::table/tfoot//a[text()='Previous']",
+    "description": "recordgridnavigationprevious",
+    "version_found": 3
+  },
+  "xpathAbsoluteRecordGridNavigationNext": {
+    "original_xpath": "//div[contains(@class, 'DataGrid-Table')]/descendant::table/tfoot//a[text()='Next']",
+    "playwright_selector": "//div[contains(@class, 'DataGrid-Table')]/descendant::table/tfoot//a[text()='Next']",
+    "description": "recordgridnavigationnext",
+    "version_found": 3
+  },
+  "xpathAbsoluteRecordGridNavigationLast": {
+    "original_xpath": "//div[contains(@class, 'DataGrid-Table')]/descendant::table/tfoot//a[@title='Last']",
+    "playwright_selector": "//div[contains(@class, 'DataGrid-Table')]/descendant::table/tfoot//a[@title='Last']",
+    "description": "recordgridnavigationlast",
+    "version_found": 3
+  },
+  "xpathAbsoluteLoginBox": {
+    "original_xpath": "//div[@class='login_box_inner']",
+    "playwright_selector": "//div[@class='login_box_inner']",
+    "description": "loginbox",
+    "version_found": 4
+  },
+  "xpathRelativeDropdownFieldInputHidden": {
+    "original_xpath": ".",
+    "playwright_selector": ".",
+    "description": "dropdownfieldinputhidden",
+    "version_found": 5
+  },
+  "xpathAbsoluteFieldLayoutPlaceholder": {
+    "original_xpath": "//*[starts-with(translate(@placeholder,'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/ancestor::div[contains(@class, 'FieldLayout---field_layout')][position()=1]",
+    "playwright_selector": "//*[starts-with(normalize-space(),{0})]/ancestor::div[contains(@class, 'FieldLayout---field_layout')][position()=1]",
+    "description": "fieldlayoutplaceholder",
+    "version_found": 6
+  },
+  "xpathAbsoluteFieldLayoutInstructions": {
+    "original_xpath": "//div[contains(@class, FieldLayout---field_instructions) and starts-with(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/ancestor::div[contains(@class, 'FieldLayout---field_layout')][position()=1]",
+    "playwright_selector": "//div[contains(@class, FieldLayout---field_instructions) and starts-with(normalize-space(),{0})]/ancestor::div[contains(@class, 'FieldLayout---field_layout')][position()=1]",
+    "description": "fieldlayoutinstructions",
+    "version_found": 6
+  },
+  "xpathAbsoluteFieldLayoutTooltip": {
+    "original_xpath": "//*[local-name()='svg']/child::*[local-name()='desc' and starts-with(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/ancestor::div[contains(@class, 'FieldLayout---field_layout')]",
+    "playwright_selector": "//*[local-name()='svg']/child::*[local-name()='desc' and starts-with(normalize-space(),{0})]/ancestor::div[contains(@class, 'FieldLayout---field_layout')]",
+    "description": "fieldlayouttooltip",
+    "version_found": 6
+  },
+  "xpathAbsoluteBarcodeFieldLabel": {
+    "original_xpath": "//label[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::div/following-sibling::div/descendant::input",
+    "playwright_selector": "//label[contains(normalize-space(),{0})]/parent::div/following-sibling::div/descendant::input",
+    "description": "barcodefieldlabel",
+    "version_found": 6
+  },
+  "xpathAbsoluteBarcodeFieldIndex": {
+    "original_xpath": "(//input[contains(@class, 'BarcodeWidget---text')])[%1$d]",
+    "playwright_selector": "(//input[contains(@class, 'BarcodeWidget---text')])[%1$d]",
+    "description": "barcodefieldindex",
+    "version_found": 6
+  },
+  "xpathRelativeBarcodeFieldInput": {
+    "original_xpath": ".//input[@type='text' and contains(@class,'BarcodeWidget---text')]",
+    "playwright_selector": ".//input[@type='text' and contains(@class,'BarcodeWidget---text')]",
+    "description": "barcodefieldinput",
+    "version_found": 6
+  },
+  "xpathDropdownFieldMultiple": {
+    "original_xpath": "MultipleDropdownWidget",
+    "playwright_selector": "MultipleDropdownWidget",
+    "description": "dropdownfieldmultiple",
+    "version_found": 6
+  },
+  "xpathDropdownOptionSelected": {
+    "original_xpath": "aria-selected",
+    "playwright_selector": "aria-selected",
+    "description": "dropdownoptionselected",
+    "version_found": 6
+  },
+  "xpathDropdownOptionChecked": {
+    "original_xpath": "aria-checked",
+    "playwright_selector": "aria-checked",
+    "description": "dropdownoptionchecked",
+    "version_found": 6
+  },
+  "xpathDropdownOptionActive": {
+    "original_xpath": "MenuWidgetItem---active",
+    "playwright_selector": "MenuWidgetItem---active",
+    "description": "dropdownoptionactive",
+    "version_found": 6
+  },
+  "xpathAbsoluteDropdownOptionList": {
+    "original_xpath": "//div[contains(@class,'TetherComponent---sailcontents') and contains(@class,'DropdownWidget---tether_dropdown')]//ul",
+    "playwright_selector": "//div[contains(@class,'TetherComponent---sailcontents') and contains(@class,'DropdownWidget---tether_dropdown')]//ul",
+    "description": "dropdownoptionlist",
+    "version_found": 6
+  },
+  "xpathAbsolutePickerSuggestionContains": {
+    "original_xpath": "//div[contains(@class,'TetherComponent---sailcontents') and contains(@class,'PickerWidget---picker_suggestions')]//p[not(p) and not(contains(text(),'Searching'))][descendant-or-self::*[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]]",
+    "playwright_selector": "//div[contains(@class,'TetherComponent---sailcontents') and contains(@class,'PickerWidget---picker_suggestions')]//p[not(p) and not(contains(text(),'Searching'))][descendant-or-self::*[contains(normalize-space(),{0})]]",
+    "description": "pickersuggestioncontains",
+    "version_found": 6
+  },
+  "xpathRowSelected": {
+    "original_xpath": "aria-selected",
+    "playwright_selector": "aria-selected",
+    "description": "rowselected",
+    "version_found": 6
+  },
+  "xpathRowSelection": {
+    "original_xpath": "---selectable",
+    "playwright_selector": "---selectable",
+    "description": "rowselection",
+    "version_found": 6
+  },
+  "xpathRelativeGridCheckboxClick": {
+    "original_xpath": ".//div[contains(@class,'CheckboxGroup---choice_group')]",
+    "playwright_selector": ".//div[contains(@class,'CheckboxGroup---choice_group')]",
+    "description": "gridcheckboxclick",
+    "version_found": 6
+  },
+  "xpathRelativeFieldLayoutLabel": {
+    "original_xpath": ".//*[(self::span or self::label) and contains(@class, 'FieldLayout---field_label')]",
+    "playwright_selector": ".//*[(self::span or self::label) and contains(@class, 'FieldLayout---field_label')]",
+    "description": "fieldlayoutlabel",
+    "version_found": 6
+  },
+  "xpathClickToPost": {
+    "original_xpath": "//div[contains(@class, 'social_box_container')]//input[not(contains(@class, 'gwt-SuggestBox'))]",
+    "playwright_selector": "//div[contains(@class, 'social_box_container')]//input[not(contains(@class, 'gwt-SuggestBox'))]",
+    "description": "clicktopost",
+    "version_found": 6
+  },
+  "xpathTogglePostParticipants": {
+    "original_xpath": ".//a[contains(@aria-label, 'Add participants')]/*[1]",
+    "playwright_selector": ".//a[contains(@aria-label, 'Add participants')]/*[1]",
+    "description": "togglepostparticipants",
+    "version_found": 6
+  },
+  "xpathAddPostParticipants": {
+    "original_xpath": "//input[contains(@placeholder, 'Add participants to notify')]",
+    "playwright_selector": "//input[contains(@placeholder, 'Add participants to notify')]",
+    "description": "addpostparticipants",
+    "version_found": 6
+  },
+  "xpathClickPostMessageBox": {
+    "original_xpath": ".//textarea[contains(@placeholder,'Type post here')]",
+    "playwright_selector": ".//textarea[contains(@placeholder,'Type post here')]",
+    "description": "clickpostmessagebox",
+    "version_found": 6
+  },
+  "xpathClickPostSubmit": {
+    "original_xpath": ".//button[text()='Post']",
+    "playwright_selector": ".//button[text()='Post']",
+    "description": "clickpostsubmit",
+    "version_found": 6
+  },
+  "xpathClickToKudos": {
+    "original_xpath": ".//a[text()='Kudos']",
+    "playwright_selector": ".//a[text()='Kudos']",
+    "description": "clicktokudos",
+    "version_found": 6
+  },
+  "xpathClickToAddKudosRecipient": {
+    "original_xpath": "//input[contains(@placeholder,'Select kudos recipient')]",
+    "playwright_selector": "//input[contains(@placeholder,'Select kudos recipient')]",
+    "description": "clicktoaddkudosrecipient",
+    "version_found": 6
+  },
+  "xpathSocialBoxContainer": {
+    "original_xpath": "//*[@class='gwt-SuggestBoxPopup social_box_container']",
+    "playwright_selector": "//*[@class='gwt-SuggestBoxPopup social_box_container']",
+    "description": "socialboxcontainer",
+    "version_found": 6
+  },
+  "xpathClickKudosMessageBox": {
+    "original_xpath": ".//textarea[contains(@placeholder,'Type kudos here')]",
+    "playwright_selector": ".//textarea[contains(@placeholder,'Type kudos here')]",
+    "description": "clickkudosmessagebox",
+    "version_found": 6
+  },
+  "xpathClickKudosSubmit": {
+    "original_xpath": ".//button[text()='Give Kudos']",
+    "playwright_selector": ".//button[text()='Give Kudos']",
+    "description": "clickkudossubmit",
+    "version_found": 6
+  },
+  "xpathClickToMessage": {
+    "original_xpath": ".//a[text()='Message']",
+    "playwright_selector": ".//a[text()='Message']",
+    "description": "clicktomessage",
+    "version_found": 6
+  },
+  "xpathClickToAddMessageRecipients": {
+    "original_xpath": ".//input[contains(@placeholder,'Add recipients')]",
+    "playwright_selector": ".//input[contains(@placeholder,'Add recipients')]",
+    "description": "clicktoaddmessagerecipients",
+    "version_found": 6
+  },
+  "xpathClickToLockMessage": {
+    "original_xpath": "//button[contains(@aria-label, 'Participants may be added')]",
+    "playwright_selector": "//button[contains(@aria-label, 'Participants may be added')]",
+    "description": "clicktolockmessage",
+    "version_found": 6
+  },
+  "xpathClickMessageBox": {
+    "original_xpath": ".//textarea[contains(@placeholder,'Type message here')]",
+    "playwright_selector": ".//textarea[contains(@placeholder,'Type message here')]",
+    "description": "clickmessagebox",
+    "version_found": 6
+  },
+  "xpathClickMessageSubmit": {
+    "original_xpath": ".//button[text()='Send Message']",
+    "playwright_selector": ".//button[text()='Send Message']",
+    "description": "clickmessagesubmit",
+    "version_found": 6
+  },
+  "xpathClickToTask": {
+    "original_xpath": ".//a[text()='Task']",
+    "playwright_selector": ".//a[text()='Task']",
+    "description": "clicktotask",
+    "version_found": 6
+  },
+  "xpathClickToAddTaskRecipient": {
+    "original_xpath": "//input[contains(@placeholder,'Select task assignee')]",
+    "playwright_selector": "//input[contains(@placeholder,'Select task assignee')]",
+    "description": "clicktoaddtaskrecipient",
+    "version_found": 6
+  },
+  "xpathClickTaskMessageBox": {
+    "original_xpath": ".//textarea[contains(@placeholder,'Type task description here')]",
+    "playwright_selector": ".//textarea[contains(@placeholder,'Type task description here')]",
+    "description": "clicktaskmessagebox",
+    "version_found": 6
+  },
+  "xpathClickTaskSubmit": {
+    "original_xpath": ".//button[text()='Send Task']",
+    "playwright_selector": ".//button[text()='Send Task']",
+    "description": "clicktasksubmit",
+    "version_found": 6
+  },
+  "xpathConcatNewsItemStar": {
+    "original_xpath": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::img[contains(@alt, 'Starred') or contains(@alt, 'Unstarred')]",
+    "playwright_selector": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::img[contains(@alt, 'Starred') or contains(@alt, 'Unstarred')]",
+    "description": "concatnewsitemstar",
+    "version_found": 6
+  },
+  "xpathConcatNewsAddComment": {
+    "original_xpath": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(text(), 'Comment')]",
+    "playwright_selector": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(text(), 'Comment')]",
+    "description": "concatnewsaddcomment",
+    "version_found": 6
+  },
+  "xpathConcatNewsAddCommentBox": {
+    "original_xpath": "/following-sibling::div/descendant::textarea[contains(@title, 'Type comment here')]",
+    "playwright_selector": "/following-sibling::div/descendant::textarea[contains(@title, 'Type comment here')]",
+    "description": "concatnewsaddcommentbox",
+    "version_found": 6
+  },
+  "xpathConcatNewsSubmitCommentButton": {
+    "original_xpath": "/following-sibling::div/descendant::button[contains(text(), 'Comment')]",
+    "playwright_selector": "/following-sibling::div/descendant::button[contains(text(), 'Comment')]",
+    "description": "concatnewssubmitcommentbutton",
+    "version_found": 6
+  },
+  "xpathAbsoluteNewsFilterLink": {
+    "original_xpath": "//span[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//span[contains(normalize-space(),{0})]",
+    "description": "newsfilterlink",
+    "version_found": 6
+  },
+  "xpathConcatNewsItemPostedAtLink": {
+    "original_xpath": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(@class, 'appian-relative-time-format-anchor')]",
+    "playwright_selector": "/following-sibling::div[starts-with(@class, 'appian-feed-entry-metadata')]/descendant::a[contains(@class, 'appian-relative-time-format-anchor')]",
+    "description": "concatnewsitempostedatlink",
+    "version_found": 6
+  },
+  "xpathConcatNewsPostedByCircle": {
+    "original_xpath": "/../../preceding-sibling::div/descendant::span[contains(@class, 'appian-user-photo') and not(contains(@class, 'container'))]",
+    "playwright_selector": "/../../preceding-sibling::div/descendant::span[contains(@class, 'appian-user-photo') and not(contains(@class, 'container'))]",
+    "description": "concatnewspostedbycircle",
+    "version_found": 6
+  },
+  "xpathConcatNewsPostedByLink": {
+    "original_xpath": "/preceding-sibling::div/descendant::span/a[contains(@class, 'appian-feed-entry-author')]",
+    "playwright_selector": "/preceding-sibling::div/descendant::span/a[contains(@class, 'appian-feed-entry-author')]",
+    "description": "concatnewspostedbylink",
+    "version_found": 6
+  },
+  "xpathTaskSorting": {
+    "original_xpath": "//img[contains(@alt, 'Sort Order')]/..",
+    "playwright_selector": "//img[contains(@alt, 'Sort Order')]/..",
+    "description": "tasksorting",
+    "version_found": 6
+  },
+  "xpathUserProfileHoverCardUserName": {
+    "original_xpath": "//div[@class='popupContent']/descendant::p[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]",
+    "playwright_selector": "//div[@class='popupContent']/descendant::p[contains(normalize-space(), {0})]",
+    "description": "userprofilehovercardusername",
+    "version_found": 6
+  },
+  "xpathTaskNewest": {
+    "original_xpath": "//a[@class='gwt-Anchor' and text()='Newest']",
+    "playwright_selector": "//a[@class='gwt-Anchor' and text()='Newest']",
+    "description": "tasknewest",
+    "version_found": 6
+  },
+  "xpathTaskOldest": {
+    "original_xpath": "//a[@class='gwt-Anchor' and text()='Oldest']",
+    "playwright_selector": "//a[@class='gwt-Anchor' and text()='Oldest']",
+    "description": "taskoldest",
+    "version_found": 6
+  },
+  "xpathAbsoluteProgressBar": {
+    "original_xpath": "//div[@id='appian-nprogress']",
+    "playwright_selector": "//div[@id='appian-nprogress']",
+    "description": "progressbar",
+    "version_found": 6
+  },
+  "xpathSitesDiscoverabilityMenu": {
+    "original_xpath": "//div[@class='SiteHeaderLayout---minimize SiteHeaderLayout---contextWidget']",
+    "playwright_selector": "//div[@class='SiteHeaderLayout---minimize SiteHeaderLayout---contextWidget']",
+    "description": "sitesdiscoverabilitymenu",
+    "version_found": 7
+  },
+  "xpathAbsoluteSiteProfileMenuLink": {
+    "original_xpath": ".//button[text()='Profile'][1]",
+    "playwright_selector": ".//button[text()='Profile'][1]",
+    "description": "siteprofilemenulink",
+    "version_found": 7
+  },
+  "xpathAbsoluteSiteSettingsMenuLink": {
+    "original_xpath": ".//button[text()='Settings'][1]",
+    "playwright_selector": ".//button[text()='Settings'][1]",
+    "description": "sitesettingsmenulink",
+    "version_found": 7
+  },
+  "xpathRelativeSiteNameMenuLink": {
+    "original_xpath": "//span[@class='MenuItem---primary_text' and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//span[@class='MenuItem---primary_text' and contains(normalize-space(),{0})]",
+    "description": "sitenamemenulink",
+    "version_found": 7
+  },
+  "xpathAuthenticationPage": {
+    "original_xpath": "//a[@class='elements---global_a' and text()='Appian']",
+    "playwright_selector": "//a[@class='elements---global_a' and text()='Appian']",
+    "description": "authenticationpage",
+    "version_found": 7
+  },
+  "xpathPageContainsText": {
+    "original_xpath": "//*[text()[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %s)]]",
+    "playwright_selector": "//*[text()[contains(normalize-space(), %s)]]",
+    "description": "pagecontainstext",
+    "version_found": 7
+  },
+  "xpathAbsoluteVideo": {
+    "original_xpath": "//video[contains(translate(@src,'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//video[contains(normalize-space(),{0})]",
+    "description": "video",
+    "version_found": 10
+  },
+  "xpathAbsoluteWebContent": {
+    "original_xpath": "//iframe[contains(translate(@src,'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::div[contains(@class, 'WebContentWidget---webcontent')] | //a[contains(translate(@href,'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": "//iframe[contains(normalize-space(),{0})]/parent::div[contains(@class, 'WebContentWidget---webcontent')] | //a[contains(normalize-space(),{0})]",
+    "description": "webcontent",
+    "version_found": 10
+  },
+  "xpathAbsoluteIconLinkField": {
+    "original_xpath": "(//a[descendant::*[contains(@class, 'IconWidget---svg')]])",
+    "playwright_selector": "(//a[descendant::*[contains(@class, 'IconWidget---svg')]])",
+    "description": "iconlinkfield",
+    "version_found": 10
+  },
+  "xpathAbsoluteIconLinkFieldAltText": {
+    "original_xpath": "(//a[descendant::*[contains(@class, 'IconWidget---svg')] and descendant::*[contains(local-name(), 'desc') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]])",
+    "playwright_selector": "(//a[descendant::*[contains(@class, 'IconWidget---svg')] and descendant::*[contains(local-name(), 'desc') and contains(normalize-space(),{0})]])",
+    "description": "iconlinkfieldalttext",
+    "version_found": 10
+  },
+  "xpathAbsoluteButtonTooltip": {
+    "original_xpath": "//button[.//descendant::span[contains(@class, 'accessibilityhidden') and starts-with(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]]",
+    "playwright_selector": "//button[.//descendant::span[contains(@class, 'accessibilityhidden') and starts-with(normalize-space(), {0})]]",
+    "description": "buttontooltip",
+    "version_found": 10
+  },
+  "xpathAbsoluteMenuWidgetItemText": {
+    "original_xpath": "//li[@class='MenuWidgetItem---default_direction' and .//descendant::span[contains(@class, 'MenuItem---primary_text') and starts-with(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]]",
+    "playwright_selector": "//li[@class='MenuWidgetItem---default_direction' and .//descendant::span[contains(@class, 'MenuItem---primary_text') and starts-with(normalize-space(), {0})]]",
+    "description": "menuwidgetitemtext",
+    "version_found": 10
+  },
+  "xpathAbsoluteMenuWidgetItem": {
+    "original_xpath": "//li[@class='MenuWidgetItem---default_direction']",
+    "playwright_selector": "//li[@class='MenuWidgetItem---default_direction']",
+    "description": "menuwidgetitem",
+    "version_found": 10
+  },
+  "xpathAbsoluteCard": {
+    "original_xpath": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::div[contains(@class,'CardLayout')]",
+    "playwright_selector": "//span[contains(normalize-space(),{0})]/parent::div[contains(@class,'CardLayout')]",
+    "description": "card",
+    "version_found": 11
+  },
+  "xpathConcatParentFieldLayout": {
+    "original_xpath": "/parent::div/parent::div",
+    "playwright_selector": "/parent::div/parent::div",
+    "description": "concatparentfieldlayout",
+    "version_found": 11
+  },
+  "xpathRelativeEncryptedTextFieldInput": {
+    "original_xpath": ".//input[@type='text' and contains(@class,'EncryptedTextWidget---text')]",
+    "playwright_selector": ".//input[@type='text' and contains(@class,'EncryptedTextWidget---text')]",
+    "description": "encryptedtextfieldinput",
+    "version_found": 12
+  },
+  "xpathAbsoluteBox": {
+    "original_xpath": "//div[(contains(@class, 'BoxLayout---box_label') or contains(@class, 'BoxLayout---box_heading'))and contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/ancestor::div[contains(concat(' ', @class, ' '), ' BoxLayout---box ')]",
+    "playwright_selector": "//div[(contains(@class, 'BoxLayout---box_label') or contains(@class, 'BoxLayout---box_heading'))and contains(normalize-space(),{0})]/ancestor::div[contains(concat(' ', @class, ' '), ' BoxLayout---box ')]",
+    "description": "box",
+    "version_found": 13
+  },
+  "xpathRelativeBoxHeader": {
+    "original_xpath": ".//div[contains(@class, 'BoxLayout---box_heading_wrapper')]",
+    "playwright_selector": ".//div[contains(@class, 'BoxLayout---box_heading_wrapper')]",
+    "description": "boxheader",
+    "version_found": 13
+  },
+  "xpathAbsoluteSearchClearX": {
+    "original_xpath": "//label[contains(@class,'FieldLayout---field_label') and contains(text(),'Search')]/ancestor::div[contains(@class,'FieldLayout---field_layout')]//div[contains(@class,'FieldLayout---input_below')]//i",
+    "playwright_selector": "//label[contains(@class,'FieldLayout---field_label') and contains(text(),'Search')]/ancestor::div[contains(@class,'FieldLayout---field_layout')]//div[contains(@class,'FieldLayout---input_below')]//i",
+    "description": "searchclearx",
+    "version_found": 13
+  },
+  "xpathRelativeMaskedBarcodeFieldInput": {
+    "original_xpath": ".//input[@type='password' and contains(@class,'BarcodeWidget---text')]",
+    "playwright_selector": ".//input[@type='password' and contains(@class,'BarcodeWidget---text')]",
+    "description": "maskedbarcodefieldinput",
+    "version_found": 14
+  },
+  "xpathRelativeMilestoneStepVerticalGeneral": {
+    "original_xpath": ".//ol[@class='MilestoneWidget---milestone MilestoneWidget---vertical']/li",
+    "playwright_selector": ".//ol[@class='MilestoneWidget---milestone MilestoneWidget---vertical']/li",
+    "description": "milestonestepverticalgeneral",
+    "version_found": 14
+  },
+  "xpathRelativeMilestoneStepVerticalSelected": {
+    "original_xpath": ".//ol[@class='MilestoneWidget---milestone MilestoneWidget---vertical']/li[@class='MilestoneWidget---current']",
+    "playwright_selector": ".//ol[@class='MilestoneWidget---milestone MilestoneWidget---vertical']/li[@class='MilestoneWidget---current']",
+    "description": "milestonestepverticalselected",
+    "version_found": 14
+  },
+  "xpathAbsoluteShowResultsLabelEntry": {
+    "original_xpath": ".//p[contains(@class, 'ParagraphText---richtext_paragraph ParagraphText---default_direction ParagraphText---align_start ParagraphText---inMessageLayout ParagraphText---info elements---global_p')]",
+    "playwright_selector": ".//p[contains(@class, 'ParagraphText---richtext_paragraph ParagraphText---default_direction ParagraphText---align_start ParagraphText---inMessageLayout ParagraphText---info elements---global_p')]",
+    "description": "showresultslabelentry",
+    "version_found": 14
+  },
+  "xpathAbsolutePickerSuggestionBox": {
+    "original_xpath": "//ul[contains(@class,'MenuWidget---inPickerWidget')]",
+    "playwright_selector": "//ul[contains(@class,'MenuWidget---inPickerWidget')]",
+    "description": "pickersuggestionbox",
+    "version_found": 14
+  },
+  "xpathRelativeGaugeField": {
+    "original_xpath": ".//div[@class='GaugeWidget---gauge_container GaugeWidget---medium GaugeWidget---accent']",
+    "playwright_selector": ".//div[@class='GaugeWidget---gauge_container GaugeWidget---medium GaugeWidget---accent']",
+    "description": "gaugefield",
+    "version_found": 16
+  },
+  "xpathRelativeGaugeFieldPercentage": {
+    "original_xpath": ".//div[@class='GaugeWidget---gauge_container GaugeWidget---medium GaugeWidget---accent']/child::node()[1]/*[2]",
+    "playwright_selector": ".//div[@class='GaugeWidget---gauge_container GaugeWidget---medium GaugeWidget---accent']/child::node()[1]/*[2]",
+    "description": "gaugefieldpercentage",
+    "version_found": 16
+  },
+  "xpathAbsoluteWorkingIndicator": {
+    "original_xpath": "//div[@id='appian-working-indicator-hidden']",
+    "playwright_selector": "//div[@id='appian-working-indicator-hidden']",
+    "description": "workingindicator",
+    "version_found": 17
+  },
+  "xpathAbsoluteDocumentImageLink": {
+    "original_xpath": "//a[(contains(@class, 'DocumentImage---image_link')) or (contains(@class, 'DocumentImage---image') and @href)]",
+    "playwright_selector": "//a[(contains(@class, 'DocumentImage---image_link')) or (contains(@class, 'DocumentImage---image') and @href)]",
+    "description": "documentimagelink",
+    "version_found": 17
+  },
+  "xpathAbsoluteDocumentImageLinkAltText": {
+    "original_xpath": "//a[((contains(@class, 'DocumentImage---image_link')) or (contains(@class, 'DocumentImage---image') and @href)) and (descendant::img[contains(translate(@alt,'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)] or descendant::span[contains(translate(@aria-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)])]",
+    "playwright_selector": "//a[((contains(@class, 'DocumentImage---image_link')) or (contains(@class, 'DocumentImage---image') and @href)) and (descendant::img[contains(normalize-space(),{0})] or descendant::span[contains(normalize-space(),{0})])]",
+    "description": "documentimagelinkalttext",
+    "version_found": 17
+  },
+  "xpathAbsoluteColumnChartIndex": {
+    "original_xpath": "((//span[translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç')=%1$s])[%2$s]/parent::*[contains(@class, 'FieldLayout')]/following-sibling::*/descendant::*[name()='rect' and contains(@class, 'highcharts-point') and parent::*[name()='g' and contains(@class, 'highcharts-column-series') and not(contains(@class, 'highcharts-legend-item'))]])[%3$s]",
+    "playwright_selector": "((//span[normalize-space()={0}])[{1}]/parent::*[contains(@class, 'FieldLayout')]/following-sibling::*/descendant::*[name()='rect' and contains(@class, 'highcharts-point') and parent::*[name()='g' and contains(@class, 'highcharts-column-series') and not(contains(@class, 'highcharts-legend-item'))]])[{2}]",
+    "description": "columnchartindex",
+    "version_found": 17
+  },
+  "xpathAbsoluteBarChartIndex": {
+    "original_xpath": "((//span[translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç')=%1$s])[%2$s]/parent::*[contains(@class, 'FieldLayout')]/following-sibling::*/descendant::*[name()='rect' and contains(@class, 'highcharts-point') and parent::*[name()='g' and contains(@class, 'highcharts-bar-series') and not(contains(@class, 'highcharts-legend-item'))]])[%3$s]",
+    "playwright_selector": "((//span[normalize-space()={0}])[{1}]/parent::*[contains(@class, 'FieldLayout')]/following-sibling::*/descendant::*[name()='rect' and contains(@class, 'highcharts-point') and parent::*[name()='g' and contains(@class, 'highcharts-bar-series') and not(contains(@class, 'highcharts-legend-item'))]])[{2}]",
+    "description": "barchartindex",
+    "version_found": 17
+  },
+  "xpathAbsolutePieChartIndex": {
+    "original_xpath": "((//span[translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç')=%1$s])[%2$s]/parent::*[contains(@class, 'FieldLayout')]/following-sibling::*/descendant::*[name()='path' and contains(@class, 'highcharts-point') and parent::*[name()='g' and contains(@class, 'highcharts-pie-series')]])[%3$s]",
+    "playwright_selector": "((//span[normalize-space()={0}])[{1}]/parent::*[contains(@class, 'FieldLayout')]/following-sibling::*/descendant::*[name()='path' and contains(@class, 'highcharts-point') and parent::*[name()='g' and contains(@class, 'highcharts-pie-series')]])[{2}]",
+    "description": "piechartindex",
+    "version_found": 17
+  },
+  "xpathAbsoluteLineChartIndex": {
+    "original_xpath": "((//span[translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç')=%1$s])[%2$s]/parent::*[contains(@class, 'FieldLayout')]/following-sibling::*/descendant::*[name()='path' and contains(@class, 'highcharts-point') and parent::*[name()='g' and contains(@class, 'highcharts-line-series') and not(contains(@class, 'highcharts-legend-item'))]])[%3$s]",
+    "playwright_selector": "((//span[normalize-space()={0}])[{1}]/parent::*[contains(@class, 'FieldLayout')]/following-sibling::*/descendant::*[name()='path' and contains(@class, 'highcharts-point') and parent::*[name()='g' and contains(@class, 'highcharts-line-series') and not(contains(@class, 'highcharts-legend-item'))]])[{2}]",
+    "description": "linechartindex",
+    "version_found": 17
+  },
+  "xpathRelativeConfirmationDialogHeader": {
+    "original_xpath": ".//div[contains(@aria-labelledby, 'ConfirmationBoxRichTextDisplayFieldheader')]/*[1][contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": ".//div[contains(@aria-labelledby, 'ConfirmationBoxRichTextDisplayFieldheader')]/*[1][contains(normalize-space(),{0})]",
+    "description": "confirmationdialogheader",
+    "version_found": 17
+  },
+  "xpathRelativeConfirmationDialogMessage": {
+    "original_xpath": ".//div[contains(@aria-labelledby, 'ConfirmationBoxRichTextDisplayFieldbody')]/*[1][contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": ".//div[contains(@aria-labelledby, 'ConfirmationBoxRichTextDisplayFieldbody')]/*[1][contains(normalize-space(),{0})]",
+    "description": "confirmationdialogmessage",
+    "version_found": 17
+  },
+  "xpathAbsoluteTagFieldLabel": {
+    "original_xpath": "//div[contains(@class, 'FieldLayout---field_layout') and descendant::span[contains(@class, 'FieldLayout---field_label') and contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)] and descendant::div[contains(@class,'TagGroup---tag_container')]]",
+    "playwright_selector": "//div[contains(@class, 'FieldLayout---field_layout') and descendant::span[contains(@class, 'FieldLayout---field_label') and contains(normalize-space(), {0})] and descendant::div[contains(@class,'TagGroup---tag_container')]]",
+    "description": "tagfieldlabel",
+    "version_found": 17
+  },
+  "xpathAbsoluteTagFieldIndex": {
+    "original_xpath": "(//div[contains(@class, 'FieldLayout---field_layout') and descendant::span[contains(@class, 'FieldLayout---field_label')] and descendant::div[contains(@class,'TagGroup---tag_container')]])[%1$d]",
+    "playwright_selector": "(//div[contains(@class, 'FieldLayout---field_layout') and descendant::span[contains(@class, 'FieldLayout---field_label')] and descendant::div[contains(@class,'TagGroup---tag_container')]])[%1$d]",
+    "description": "tagfieldindex",
+    "version_found": 17
+  },
+  "xpathRelativeTagGroup": {
+    "original_xpath": ".//div[contains(@class,'TagGroup---tag_container')]",
+    "playwright_selector": ".//div[contains(@class,'TagGroup---tag_container')]",
+    "description": "taggroup",
+    "version_found": 17
+  },
+  "xpathRelativeTagItem": {
+    "original_xpath": ".//div[contains(@class,'TagItem---tag')]",
+    "playwright_selector": ".//div[contains(@class,'TagItem---tag')]",
+    "description": "tagitem",
+    "version_found": 17
+  },
+  "xpathRelativeTagItemLabel": {
+    "original_xpath": ".//div[contains(@class,'TagItem---tag') and descendant::span[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]]",
+    "playwright_selector": ".//div[contains(@class,'TagItem---tag') and descendant::span[contains(normalize-space(), {0})]]",
+    "description": "tagitemlabel",
+    "version_found": 17
+  },
+  "xpathAbsoluteTagItemLabel": {
+    "original_xpath": "//div[contains(@class,'TagItem---tag') and descendant::span[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)]]",
+    "playwright_selector": "//div[contains(@class,'TagItem---tag') and descendant::span[contains(normalize-space(), {0})]]",
+    "description": "tagitemlabel",
+    "version_found": 17
+  },
+  "xpathAbsoluteTagItemIndex": {
+    "original_xpath": "(//div[contains(@class,'TagItem---tag')])[%1$d]",
+    "playwright_selector": "(//div[contains(@class,'TagItem---tag')])[%1$d]",
+    "description": "tagitemindex",
+    "version_found": 17
+  },
+  "xpathAbsoluteDropdownSearchBoxField": {
+    "original_xpath": "//div[contains(@class, 'DropdownWidget---search_box_wrapper')]",
+    "playwright_selector": "//div[contains(@class, 'DropdownWidget---search_box_wrapper')]",
+    "description": "dropdownsearchboxfield",
+    "version_found": 20
+  },
+  "xpathAbsoluteStampFieldLabel": {
+    "original_xpath": "//span[contains(@class, 'FieldLayout---field_label') and contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/parent::*/following-sibling::*/div/div[contains(@class, 'StampWidget---stamp')]",
+    "playwright_selector": "//span[contains(@class, 'FieldLayout---field_label') and contains(normalize-space(),{0})]/parent::*/following-sibling::*/div/div[contains(@class, 'StampWidget---stamp')]",
+    "description": "stampfieldlabel",
+    "version_found": 20
+  },
+  "xpathAbsoluteStampFieldIndex": {
+    "original_xpath": "(//div[contains(@class, 'StampWidget---stamp_wrapper')]/div[contains(@class, 'StampWidget---stamp')])[%1$d]",
+    "playwright_selector": "(//div[contains(@class, 'StampWidget---stamp_wrapper')]/div[contains(@class, 'StampWidget---stamp')])[%1$d]",
+    "description": "stampfieldindex",
+    "version_found": 20
+  },
+  "xpathRelativeStampFieldText": {
+    "original_xpath": ".//descendant::span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]",
+    "playwright_selector": ".//descendant::span[contains(normalize-space(),{0})]",
+    "description": "stampfieldtext",
+    "version_found": 21
+  },
+  "xpathAbsoluteSignatureField": {
+    "original_xpath": "//div[contains(@class, 'FieldLayout---field_layout') and descendant::span[contains(@class, 'FieldLayout---field_label') and contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s)] and descendant::div[contains(@class,'SignatureWidget---container')]]",
+    "playwright_selector": "//div[contains(@class, 'FieldLayout---field_layout') and descendant::span[contains(@class, 'FieldLayout---field_label') and contains(normalize-space(), {0})] and descendant::div[contains(@class,'SignatureWidget---container')]]",
+    "description": "signaturefield",
+    "version_found": 21
+  },
+  "xpathAbsoluteSignatureFieldIndex": {
+    "original_xpath": "(//div[contains(@class, 'FieldLayout---field_layout') and descendant::span[contains(@class, 'FieldLayout---field_label')] and descendant::div[contains(@class,'SignatureWidget---container')]])[%1$d]",
+    "playwright_selector": "(//div[contains(@class, 'FieldLayout---field_layout') and descendant::span[contains(@class, 'FieldLayout---field_label')] and descendant::div[contains(@class,'SignatureWidget---container')]])[%1$d]",
+    "description": "signaturefieldindex",
+    "version_found": 21
+  },
+  "xpathRelativeSignatureButton": {
+    "original_xpath": ".//button[contains(@class, 'Button---inSignatureWidget')]",
+    "playwright_selector": ".//button[contains(@class, 'Button---inSignatureWidget')]",
+    "description": "signaturebutton",
+    "version_found": 21
+  },
+  "xpathAbsoluteSignatureCanvas": {
+    "original_xpath": "//canvas[contains(@class, 'SignatureWidget---canvas')]",
+    "playwright_selector": "//canvas[contains(@class, 'SignatureWidget---canvas')]",
+    "description": "signaturecanvas",
+    "version_found": 21
+  },
+  "xpathAbsoluteSignatureDoneButton": {
+    "original_xpath": "//div[contains(@class, 'SignatureWidget---popup')]/descendant::button[2]",
+    "playwright_selector": "//div[contains(@class, 'SignatureWidget---popup')]/descendant::button[2]",
+    "description": "signaturedonebutton",
+    "version_found": 21
+  },
+  "xpathAbsoluteRecordActionFieldIndexButton": {
+    "original_xpath": "(//div[contains(@class, 'RecordActionWidget---menu_layout_wrapper')])[%1$d]//button",
+    "playwright_selector": "(//div[contains(@class, 'RecordActionWidget---menu_layout_wrapper')])[%1$d]//button",
+    "description": "recordactionfieldindexbutton",
+    "version_found": 21
+  },
+  "xpathHiddenRecordActionList": {
+    "original_xpath": "//ul[contains(@class,'MenuWidget---inRecordActionWidget')]",
+    "playwright_selector": "//ul[contains(@class,'MenuWidget---inRecordActionWidget')]",
+    "description": "hiddenrecordactionlist",
+    "version_found": 21
+  },
+  "xpathAbsoluteCardChoice": {
+    "original_xpath": "//div[contains(@class,'CardLayout') and descendant::span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)] | descendant::strong[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)] and ancestor::div[contains(@class, 'FieldLayout') and descendant::span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%2$s)]]]",
+    "playwright_selector": "//div[contains(@class,'CardLayout') and descendant::span[contains(normalize-space(),{0})] | descendant::strong[contains(normalize-space(),{0})] and ancestor::div[contains(@class, 'FieldLayout') and descendant::span[contains(normalize-space(),{1})]]]",
+    "description": "cardchoice",
+    "version_found": 25
+  },
+  "xpathCardChoiceSelected": {
+    "original_xpath": "CardLayout---selected_card",
+    "playwright_selector": "CardLayout---selected_card",
+    "description": "cardchoiceselected",
+    "version_found": 25
+  },
+  "xpathAbsoluteCardChoiceField": {
+    "original_xpath": "//div[contains(@class, 'FieldLayout---field_layout') and descendant::div[contains(@class, 'CardGroup---card_group')] and descendant::span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),'card choice')]]",
+    "playwright_selector": "//div[contains(@class, 'FieldLayout---field_layout') and descendant::div[contains(@class, 'CardGroup---card_group')] and descendant::span[contains(normalize-space(),'card choice')]]",
+    "description": "cardchoicefield",
+    "version_found": 25
+  },
+  "xpathAbsoluteRecordTypeDateRange": {
+    "original_xpath": "//div[contains(@class, 'DateRangeWidget---date_range_outer_box')]",
+    "playwright_selector": "//div[contains(@class, 'DateRangeWidget---date_range_outer_box')]",
+    "description": "recordtypedaterange",
+    "version_found": 26
+  },
+  "xpathAbsoluteRecordTypeDateRangeStartDate": {
+    "original_xpath": "//input[contains(@class, 'DateRangeInputPicker---date_range_input') and ancestor::div[@data-testid='DateRangeWidget-startDateContainer']]",
+    "playwright_selector": "//input[contains(@class, 'DateRangeInputPicker---date_range_input') and ancestor::div[@data-testid='DateRangeWidget-startDateContainer']]",
+    "description": "recordtypedaterangestartdate",
+    "version_found": 26
+  },
+  "xpathAbsoluteRecordTypeDateRangeEndDate": {
+    "original_xpath": "//input[contains(@class, 'DateRangeInputPicker---date_range_input') and ancestor::div[@data-testid='DateRangeWidget-endDateContainer']]",
+    "playwright_selector": "//input[contains(@class, 'DateRangeInputPicker---date_range_input') and ancestor::div[@data-testid='DateRangeWidget-endDateContainer']]",
+    "description": "recordtypedaterangeenddate",
+    "version_found": 26
+  },
+  "xpathGeneralText": {
+    "original_xpath": "//div/descendant::*[text()[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]]",
+    "playwright_selector": "//div/descendant::*[text()[contains(normalize-space(),{0})]]",
+    "description": "generaltext",
+    "version_found": 27
+  },
+  "xpathRelativeSiteGroup": {
+    "original_xpath": "//button[@data-testid = 'VirtualNavigationMenuTab-pulldownButton' and descendant::span[text()[contains(translate(. ,'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]]]",
+    "playwright_selector": "//button[@data-testid = 'VirtualNavigationMenuTab-pulldownButton' and descendant::span[text()[contains(normalize-space(),{0})]]]",
+    "description": "sitegroup",
+    "version_found": 32
+  },
+  "xpathRelativeSitePageInGroup": {
+    "original_xpath": "//li[contains(translate(@title,'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'), %1$s) and ancestor::section[@data-testid = 'VirtualNavigationMenuTab-popupMenuContents']]/descendant::a",
+    "playwright_selector": "//li[contains(normalize-space(), {0}) and ancestor::section[@data-testid = 'VirtualNavigationMenuTab-popupMenuContents']]/descendant::a",
+    "description": "sitepageingroup",
+    "version_found": 32
+  },
+  "xpathRelativeChartDownload": {
+    "original_xpath": "//span[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑÇ','abcdefghijklmnopqrstuvwxyzáéíóúüñç'),%1$s)]/ancestor::div[contains(@class, 'FieldLayout---field_layout')]/descendant::button[@title = 'Download PNG Image']",
+    "playwright_selector": "//span[contains(normalize-space(),{0})]/ancestor::div[contains(@class, 'FieldLayout---field_layout')]/descendant::button[@title = 'Download PNG Image']",
+    "description": "chartdownload",
+    "version_found": 33
+  },
+  "xpathSideBarCollapseButton": {
+    "original_xpath": "//button[@data-testid = 'VirtualNavigationHeaderSideBarLayout-collapse-button']",
+    "playwright_selector": "//button[@data-testid = 'VirtualNavigationHeaderSideBarLayout-collapse-button']",
+    "description": "sidebarcollapsebutton",
+    "version_found": 34
+  }
+}
