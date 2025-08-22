@@ -75,8 +75,7 @@ User's Test Scenario:
         const result = JSON.parse(jsonString);
 
         if (result && typeof result.code === 'string') {
-            // A simple post-processing step to clean up placeholders if the model miss-formats them
-            return result.code.replace(/\{(\d+)\}/g, '{}');
+            return result.code;
         } else {
             throw new Error("Invalid response format from API. Expected a JSON object with a 'code' property.");
         }
